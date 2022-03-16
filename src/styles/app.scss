@@ -1,0 +1,49 @@
+.App {
+  border: 1px solid #7bf762;
+  border-radius: 10px;
+  h1 {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .right {
+    margin-top: 85px;
+  }
+}
+.options-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 671px) {
+  .App {
+    .container {
+      flex-direction: column;
+      padding-bottom: 60px;
+    }
+    .result {
+      width: auto;
+      height: auto;
+    }
+  }
+  .options-container {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .App {
+    .container {
+      flex-direction: column;
+      padding-bottom: 60px;
+    }
+  }
+}
+@import "./result.scss";
+@import "./options.scss";

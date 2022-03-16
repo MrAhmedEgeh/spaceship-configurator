@@ -1,0 +1,34 @@
+.result {
+  background-color: #1c3c16;
+  border: 1px solid #7bf762;
+  width: 400px;
+  height: 240px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  .top > span {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 8px;
+    & > span {
+      text-align: right;
+      color: #fff;
+    }
+  }
+  .total {
+    border-top: 1px solid #7bf762;
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 671px) {
+  .result {
+    margin-top: 40px;
+  }
+}
