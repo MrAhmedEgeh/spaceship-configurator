@@ -22,7 +22,7 @@ function Options({type, price, text, children, color, optionClass, id}) {
         type === "package" ?
         (<div className={`option ${optionClass} packa`} onClick={() => dispatch(selectPackage(price, id))}>
         <div className="pt">{text}</div>
-        <div className="pt">{price !== undefined ? ('+' + price + '€') : ''}</div>
+        <div className="pt">{price !== 0 ? `+${price}€` : ''}</div>
         <div className='children'>
             {
                 children.map((child, i) => <div className="packages" key={i}><img src={poly} alt="triangle" /> {child}</div>)
