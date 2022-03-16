@@ -20,7 +20,7 @@ function Result() {
              {
                  attribute.map((att, index) => (
                      (
-                      <span className='attributes' key={index}>{att.name} <span className="pd_lf">{att.value}€</span></span>
+                      <span className='attributes' key={index}>{att.name} <span className="pd_lf">{att.name !== 'Base price:' ? `+${att.value}` : att.value}€</span></span>
                      )
                      
                  ))
